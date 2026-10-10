@@ -1,0 +1,16 @@
+{
+  "name": "jayakumar-bearings",
+  "description": "Jayakumar Bearings website",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i _dev/input.css -o css/tailwind.css --minify",
+    "build:html": "python3 _dev/build.py",
+    "build": "python3 _dev/build.py && npm run build:css"
+  },
+  "devDependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "lucide-static": "^1.54.0",
+    "simple-icons": "^16.34.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "private": true
+}
